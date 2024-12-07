@@ -1,0 +1,91 @@
+{
+    "hints": {
+        "create_fibonacci()void": {
+            "call_config": {
+                "no_op": "CREATE"
+            }
+        },
+        "compute_fibonacci(uint64)uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "get_result()uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuZmlib25hY2NpX3JlY3Vyc2l2ZS5jb250cmFjdF9yZWN1cnNpdmUuRmlib25hY2NpQ29udHJhY3QuYXBwcm92YWxfcHJvZ3JhbToKICAgIGludGNibG9jayAxIDAKICAgIGJ5dGVjYmxvY2sgMHgxNTFmN2M3NQogICAgY2FsbHN1YiBfX3B1eWFfYXJjNF9yb3V0ZXJfXwogICAgcmV0dXJuCgoKLy8gc21hcnRfY29udHJhY3RzLmZpYm9uYWNjaV9yZWN1cnNpdmUuY29udHJhY3RfcmVjdXJzaXZlLkZpYm9uYWNjaUNvbnRyYWN0Ll9fcHV5YV9hcmM0X3JvdXRlcl9fKCkgLT4gdWludDY0OgpfX3B1eWFfYXJjNF9yb3V0ZXJfXzoKICAgIC8vIGNvbnRyYWN0X3JlY3Vyc2l2ZS5weTo4CiAgICAvLyBjbGFzcyBGaWJvbmFjY2lDb250cmFjdChhcmM0LkFSQzRDb250cmFjdCk6CiAgICBwcm90byAwIDEKICAgIHR4biBOdW1BcHBBcmdzCiAgICBieiBfX3B1eWFfYXJjNF9yb3V0ZXJfX19hZnRlcl9pZl9lbHNlQDgKICAgIHB1c2hieXRlc3MgMHg4MWZmN2QyMiAweDZlNWJmZjU5IDB4OTFiM2Q5ZGQgLy8gbWV0aG9kICJjcmVhdGVfZmlib25hY2NpKCl2b2lkIiwgbWV0aG9kICJjb21wdXRlX2ZpYm9uYWNjaSh1aW50NjQpdWludDY0IiwgbWV0aG9kICJnZXRfcmVzdWx0KCl1aW50NjQiCiAgICB0eG5hIEFwcGxpY2F0aW9uQXJncyAwCiAgICBtYXRjaCBfX3B1eWFfYXJjNF9yb3V0ZXJfX19jcmVhdGVfZmlib25hY2NpX3JvdXRlQDIgX19wdXlhX2FyYzRfcm91dGVyX19fY29tcHV0ZV9maWJvbmFjY2lfcm91dGVAMyBfX3B1eWFfYXJjNF9yb3V0ZXJfX19nZXRfcmVzdWx0X3JvdXRlQDQKICAgIGludGNfMSAvLyAwCiAgICByZXRzdWIKCl9fcHV5YV9hcmM0X3JvdXRlcl9fX2NyZWF0ZV9maWJvbmFjY2lfcm91dGVAMjoKICAgIC8vIGNvbnRyYWN0X3JlY3Vyc2l2ZS5weToxMi0xNQogICAgLy8gQGFyYzQuYWJpbWV0aG9kKAogICAgLy8gICAgIGFsbG93X2FjdGlvbnM9WyJOb09wIl0sCiAgICAvLyAgICAgY3JlYXRlPSJyZXF1aXJlIiwKICAgIC8vICkKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gaXMgbm90IE5vT3AKICAgIHR4biBBcHBsaWNhdGlvbklECiAgICAhCiAgICBhc3NlcnQgLy8gY2FuIG9ubHkgY2FsbCB3aGVuIGNyZWF0aW5nCiAgICBpbnRjXzAgLy8gMQogICAgcmV0c3ViCgpfX3B1eWFfYXJjNF9yb3V0ZXJfX19jb21wdXRlX2ZpYm9uYWNjaV9yb3V0ZUAzOgogICAgLy8gY29udHJhY3RfcmVjdXJzaXZlLnB5OjIyCiAgICAvLyBAYXJjNC5hYmltZXRob2QKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gaXMgbm90IE5vT3AKICAgIHR4biBBcHBsaWNhdGlvbklECiAgICBhc3NlcnQgLy8gY2FuIG9ubHkgY2FsbCB3aGVuIG5vdCBjcmVhdGluZwogICAgLy8gY29udHJhY3RfcmVjdXJzaXZlLnB5OjgKICAgIC8vIGNsYXNzIEZpYm9uYWNjaUNvbnRyYWN0KGFyYzQuQVJDNENvbnRyYWN0KToKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDEKICAgIGJ0b2kKICAgIC8vIGNvbnRyYWN0X3JlY3Vyc2l2ZS5weToyMgogICAgLy8gQGFyYzQuYWJpbWV0aG9kCiAgICBjYWxsc3ViIGNvbXB1dGVfZmlib25hY2NpCiAgICBpdG9iCiAgICBieXRlY18wIC8vIDB4MTUxZjdjNzUKICAgIHN3YXAKICAgIGNvbmNhdAogICAgbG9nCiAgICBpbnRjXzAgLy8gMQogICAgcmV0c3ViCgpfX3B1eWFfYXJjNF9yb3V0ZXJfX19nZXRfcmVzdWx0X3JvdXRlQDQ6CiAgICAvLyBjb250cmFjdF9yZWN1cnNpdmUucHk6MzYKICAgIC8vIEBhcmM0LmFiaW1ldGhvZAogICAgdHhuIE9uQ29tcGxldGlvbgogICAgIQogICAgYXNzZXJ0IC8vIE9uQ29tcGxldGlvbiBpcyBub3QgTm9PcAogICAgdHhuIEFwcGxpY2F0aW9uSUQKICAgIGFzc2VydCAvLyBjYW4gb25seSBjYWxsIHdoZW4gbm90IGNyZWF0aW5nCiAgICBjYWxsc3ViIGdldF9yZXN1bHQKICAgIGl0b2IKICAgIGJ5dGVjXzAgLy8gMHgxNTFmN2M3NQogICAgc3dhcAogICAgY29uY2F0CiAgICBsb2cKICAgIGludGNfMCAvLyAxCiAgICByZXRzdWIKCl9fcHV5YV9hcmM0X3JvdXRlcl9fX2FmdGVyX2lmX2Vsc2VAODoKICAgIC8vIGNvbnRyYWN0X3JlY3Vyc2l2ZS5weTo4CiAgICAvLyBjbGFzcyBGaWJvbmFjY2lDb250cmFjdChhcmM0LkFSQzRDb250cmFjdCk6CiAgICBpbnRjXzEgLy8gMAogICAgcmV0c3ViCgoKLy8gc21hcnRfY29udHJhY3RzLmZpYm9uYWNjaV9yZWN1cnNpdmUuY29udHJhY3RfcmVjdXJzaXZlLkZpYm9uYWNjaUNvbnRyYWN0LmNvbXB1dGVfZmlib25hY2NpKG46IHVpbnQ2NCkgLT4gdWludDY0Ogpjb21wdXRlX2ZpYm9uYWNjaToKICAgIC8vIGNvbnRyYWN0X3JlY3Vyc2l2ZS5weToyMi0yMwogICAgLy8gQGFyYzQuYWJpbWV0aG9kCiAgICAvLyBkZWYgY29tcHV0ZV9maWJvbmFjY2koc2VsZiwgbjogVUludDY0KSAtPiBVSW50NjQ6CiAgICBwcm90byAxIDEKICAgIC8vIGNvbnRyYWN0X3JlY3Vyc2l2ZS5weToyNy0yOAogICAgLy8gIyBCYXNlIGNhc2UgZm9yIHJlY3Vyc2lvbgogICAgLy8gaWYgbiA9PSAwOgogICAgZnJhbWVfZGlnIC0xCiAgICBibnogY29tcHV0ZV9maWJvbmFjY2lfZWxzZV9ib2R5QDIKICAgIC8vIGNvbnRyYWN0X3JlY3Vyc2l2ZS5weToyOQogICAgLy8gcmV0dXJuIFVJbnQ2NCgwKQogICAgaW50Y18xIC8vIDAKICAgIHJldHN1YgoKY29tcHV0ZV9maWJvbmFjY2lfZWxzZV9ib2R5QDI6CiAgICAvLyBjb250cmFjdF9yZWN1cnNpdmUucHk6MzAKICAgIC8vIGVsaWYgbiA9PSAxOgogICAgZnJhbWVfZGlnIC0xCiAgICBpbnRjXzAgLy8gMQogICAgPT0KICAgIGJ6IGNvbXB1dGVfZmlib25hY2NpX2Vsc2VfYm9keUA0CiAgICAvLyBjb250cmFjdF9yZWN1cnNpdmUucHk6MzEKICAgIC8vIHJldHVybiBVSW50NjQoMSkKICAgIGludGNfMCAvLyAxCiAgICByZXRzdWIKCmNvbXB1dGVfZmlib25hY2NpX2Vsc2VfYm9keUA0OgogICAgLy8gY29udHJhY3RfcmVjdXJzaXZlLnB5OjMzLTM0CiAgICAvLyAjIFJlY3Vyc2l2ZSBjYXNlOiBmaWIobikgPSBmaWIobi0xKSArIGZpYihuLTIpCiAgICAvLyByZXR1cm4gc2VsZi5jb21wdXRlX2ZpYm9uYWNjaShuIC0gMSkgKyBzZWxmLmNvbXB1dGVfZmlib25hY2NpKG4gLSAyKQogICAgZnJhbWVfZGlnIC0xCiAgICBpbnRjXzAgLy8gMQogICAgLQogICAgY2FsbHN1YiBjb21wdXRlX2ZpYm9uYWNjaQogICAgZnJhbWVfZGlnIC0xCiAgICBwdXNoaW50IDIgLy8gMgogICAgLQogICAgY2FsbHN1YiBjb21wdXRlX2ZpYm9uYWNjaQogICAgKwogICAgcmV0c3ViCgoKLy8gc21hcnRfY29udHJhY3RzLmZpYm9uYWNjaV9yZWN1cnNpdmUuY29udHJhY3RfcmVjdXJzaXZlLkZpYm9uYWNjaUNvbnRyYWN0LmdldF9yZXN1bHQoKSAtPiB1aW50NjQ6CmdldF9yZXN1bHQ6CiAgICAvLyBjb250cmFjdF9yZWN1cnNpdmUucHk6MzYtMzcKICAgIC8vIEBhcmM0LmFiaW1ldGhvZAogICAgLy8gZGVmIGdldF9yZXN1bHQoc2VsZikgLT4gVUludDY0OgogICAgcHJvdG8gMCAxCiAgICAvLyBjb250cmFjdF9yZWN1cnNpdmUucHk6NDEKICAgIC8vIHJldHVybiBzZWxmLnJlc3VsdAogICAgaW50Y18xIC8vIDAKICAgIHB1c2hieXRlcyAicmVzdWx0IgogICAgYXBwX2dsb2JhbF9nZXRfZXgKICAgIGFzc2VydCAvLyBjaGVjayBzZWxmLnJlc3VsdCBleGlzdHMKICAgIHJldHN1Ygo=",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuZmlib25hY2NpX3JlY3Vyc2l2ZS5jb250cmFjdF9yZWN1cnNpdmUuRmlib25hY2NpQ29udHJhY3QuY2xlYXJfc3RhdGVfcHJvZ3JhbToKICAgIHB1c2hpbnQgMSAvLyAxCiAgICByZXR1cm4K"
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 2
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "n": {
+                    "type": "uint64",
+                    "key": "n"
+                },
+                "result": {
+                    "type": "uint64",
+                    "key": "result"
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "FibonacciContract",
+        "methods": [
+            {
+                "name": "create_fibonacci",
+                "args": [],
+                "readonly": false,
+                "returns": {
+                    "type": "void"
+                },
+                "desc": "Initializes the contract."
+            },
+            {
+                "name": "compute_fibonacci",
+                "args": [
+                    {
+                        "type": "uint64",
+                        "name": "n"
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "uint64"
+                },
+                "desc": "Computes the nth Fibonacci number recursively."
+            },
+            {
+                "name": "get_result",
+                "args": [],
+                "readonly": false,
+                "returns": {
+                    "type": "uint64"
+                },
+                "desc": "Retrieves the last computed Fibonacci number."
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {}
+}

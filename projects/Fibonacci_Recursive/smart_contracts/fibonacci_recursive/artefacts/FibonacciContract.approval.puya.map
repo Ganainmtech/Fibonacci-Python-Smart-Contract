@@ -1,0 +1,613 @@
+{
+  "version": 3,
+  "sources": [
+    "../contract_recursive.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;AAOA;;;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;AAAA;AAAA;AAIK;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAUA;;AAAA;AAAA;AAAA;;AAAA;AAdL;;;AAAA;AAcK;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAcA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AA5BL;AAAA;AAcA;;;AAMA;;AAAA;;;AACmB;AAAP;AACC;;AAAK;AAAL;AAAb;;;AACmB;AAAP;AAG8B;;AAAI;AAAJ;AAAvB;;;AAAuD;;AAAI;;AAAJ;AAAvB;;;AAAhC;AAAP;AAEZ;;;AAKe;AAAA;;;;;;;;AAAA;AAAA;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.approval_program",
+      "params": {},
+      "block": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.approval_program",
+      "stack_in": [],
+      "op": "intcblock 1 0"
+    },
+    "5": {
+      "op": "bytecblock 0x151f7c75"
+    },
+    "12": {
+      "callsub": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.__puya_arc4_router__",
+      "op": "callsub __puya_arc4_router__",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "15": {
+      "op": "return",
+      "stack_out": []
+    },
+    "16": {
+      "subroutine": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.__puya_arc4_router__",
+      "params": {},
+      "block": "__puya_arc4_router__",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "19": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "21": {
+      "op": "bz __puya_arc4_router___after_if_else@8",
+      "stack_out": []
+    },
+    "24": {
+      "op": "pushbytess 0x81ff7d22 0x6e5bff59 0x91b3d9dd // method \"create_fibonacci()void\", method \"compute_fibonacci(uint64)uint64\", method \"get_result()uint64\""
+    },
+    "41": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(compute_fibonacci(uint64)uint64)",
+        "Method(create_fibonacci()void)",
+        "Method(get_result()uint64)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(create_fibonacci()void)",
+        "Method(compute_fibonacci(uint64)uint64)",
+        "Method(get_result()uint64)",
+        "tmp%2#0"
+      ]
+    },
+    "44": {
+      "op": "match __puya_arc4_router___create_fibonacci_route@2 __puya_arc4_router___compute_fibonacci_route@3 __puya_arc4_router___get_result_route@4",
+      "stack_out": []
+    },
+    "52": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "53": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "54": {
+      "block": "__puya_arc4_router___create_fibonacci_route@2",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "56": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "57": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "58": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "60": {
+      "op": "!",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "61": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "62": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "63": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "64": {
+      "block": "__puya_arc4_router___compute_fibonacci_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "66": {
+      "op": "!",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "67": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "68": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "70": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "71": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "74": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "75": {
+      "callsub": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.compute_fibonacci",
+      "op": "callsub compute_fibonacci",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "78": {
+      "op": "itob",
+      "defined_out": [
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0"
+      ]
+    },
+    "79": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "80": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "81": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "82": {
+      "op": "log",
+      "stack_out": []
+    },
+    "83": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "84": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "85": {
+      "block": "__puya_arc4_router___get_result_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "87": {
+      "op": "!",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "88": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "89": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "91": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "92": {
+      "callsub": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.get_result",
+      "op": "callsub get_result",
+      "defined_out": [
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0"
+      ]
+    },
+    "95": {
+      "op": "itob",
+      "defined_out": [
+        "val_as_bytes%1#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%1#0"
+      ]
+    },
+    "96": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "val_as_bytes%1#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%1#0",
+        "0x151f7c75"
+      ]
+    },
+    "97": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "val_as_bytes%1#0"
+      ]
+    },
+    "98": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "99": {
+      "op": "log",
+      "stack_out": []
+    },
+    "100": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "101": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "102": {
+      "block": "__puya_arc4_router___after_if_else@8",
+      "stack_in": [],
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "103": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "104": {
+      "subroutine": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.compute_fibonacci",
+      "params": {
+        "n#0": "uint64"
+      },
+      "block": "compute_fibonacci",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "107": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "n#0 (copy)"
+      ],
+      "stack_out": [
+        "n#0 (copy)"
+      ]
+    },
+    "109": {
+      "op": "bnz compute_fibonacci_else_body@2",
+      "stack_out": []
+    },
+    "112": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "113": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "114": {
+      "block": "compute_fibonacci_else_body@2",
+      "stack_in": [],
+      "op": "frame_dig -1",
+      "defined_out": [
+        "n#0 (copy)"
+      ],
+      "stack_out": [
+        "n#0 (copy)"
+      ]
+    },
+    "116": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "n#0 (copy)"
+      ],
+      "stack_out": [
+        "n#0 (copy)",
+        "1"
+      ]
+    },
+    "117": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "118": {
+      "op": "bz compute_fibonacci_else_body@4",
+      "stack_out": []
+    },
+    "121": {
+      "op": "intc_0 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "122": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "123": {
+      "block": "compute_fibonacci_else_body@4",
+      "stack_in": [],
+      "op": "frame_dig -1",
+      "defined_out": [
+        "n#0 (copy)"
+      ],
+      "stack_out": [
+        "n#0 (copy)"
+      ]
+    },
+    "125": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "n#0 (copy)"
+      ],
+      "stack_out": [
+        "n#0 (copy)",
+        "1"
+      ]
+    },
+    "126": {
+      "op": "-",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "127": {
+      "callsub": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.compute_fibonacci",
+      "op": "callsub compute_fibonacci",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "130": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "tmp%3#0",
+        "n#0 (copy)"
+      ]
+    },
+    "132": {
+      "op": "pushint 2 // 2",
+      "defined_out": [
+        "2",
+        "n#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "n#0 (copy)",
+        "2"
+      ]
+    },
+    "134": {
+      "op": "-",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%4#0"
+      ]
+    },
+    "135": {
+      "callsub": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.compute_fibonacci",
+      "op": "callsub compute_fibonacci",
+      "defined_out": [
+        "tmp%3#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tmp%5#0"
+      ]
+    },
+    "138": {
+      "op": "+",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "139": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "140": {
+      "subroutine": "smart_contracts.fibonacci_recursive.contract_recursive.FibonacciContract.get_result",
+      "params": {},
+      "block": "get_result",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "143": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "144": {
+      "op": "pushbytes \"result\"",
+      "defined_out": [
+        "\"result\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"result\""
+      ]
+    },
+    "152": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "153": {
+      "error": "check self.result exists",
+      "op": "assert // check self.result exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "154": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
