@@ -1,25 +1,25 @@
-from algopy import (arc4, Global, UInt64, urange)
-
+from algopy import (arc4, Global, UInt64)
+# Fibonacci smart contract using ARC4
 class FibonacciContract(arc4.ARC4Contract):
-    n: UInt64  # Input: Which Fibonacci number to compute
-    result: UInt64  # Output: Computed Fibonacci result
+    # State variable for the Fibonacci input
+    n: UInt64  # Stores which Fibonacci number to compute
 
     @arc4.abimethod(
-        allow_actions=["NoOp"],
-        create="require",
+        allow_actions=["NoOp"],  # Callable only during a NoOp transaction
+        create="require",  
     )
     def create_fibonacci(self) -> None:
         """
-        Initializes the contract.
+        Contract initialisation.
         """
         pass
 
     @arc4.abimethod
     def compute_fibonacci(self, n: UInt64) -> UInt64:
         """
-        Computes the nth Fibonacci number recursively.
+        Compute the nth Fibonacci number recursively.
         """
-        # Base case for recursion
+        # Base cases: return 0 or 1 directly
         if n == 0:
             return UInt64(0)
         elif n == 1:
@@ -27,10 +27,3 @@ class FibonacciContract(arc4.ARC4Contract):
         else:
             # Recursive case: fib(n) = fib(n-1) + fib(n-2)
             return self.compute_fibonacci(n - 1) + self.compute_fibonacci(n - 2)
-
-    @arc4.abimethod
-    def get_result(self) -> UInt64:
-        """
-        Retrieves the last computed Fibonacci number.
-        """
-        return self.result
